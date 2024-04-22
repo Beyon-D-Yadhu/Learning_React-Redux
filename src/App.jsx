@@ -5,12 +5,14 @@ import './App.css'
 import CakeContainer from './components/CakeContainer'
 import { Provider } from 'react-redux'
 import store from './redux/store'
+import HooksCakeContainer from './components/HooksCakeContainer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <Provider store={store}>
+      <HooksCakeContainer />
       <CakeContainer />
     </Provider>
   )
