@@ -4,7 +4,7 @@ import {buyCake} from '../redux/cake/cakeActions'
 
 const mapStateToProps = state => {
     return {
-        numOfCakes: state.numOfCakes
+        numOfCakes: state.cake.numOfCakes
     }
 }
 
